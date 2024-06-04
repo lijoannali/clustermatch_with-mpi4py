@@ -43,7 +43,7 @@ class ClusterMatchSimilarityMatrixTest(unittest.TestCase):
             [0.8, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0],  #03 2 --
             [1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],  #04 2 --
             [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0],  #05 3
-        ], dtype=np.float)
+        ], dtype=float)
         # source01 = source01 + np.random.rand(6, 7) * 0.2
 
         # source02
@@ -57,7 +57,7 @@ class ClusterMatchSimilarityMatrixTest(unittest.TestCase):
             [  0,   0, 500, 1000, 500,  0,    0.0],  #12 1 <<
             [100, 100,   0,    0,   0,  0,    0.0],  #13 2 --
             [  0,   0,   0,    0,   0,  0,  100.0],  #14 3
-        ], dtype=np.float)
+        ], dtype=float)
         # source02 = source02 + np.random.rand(9, 7) * 20
 
         data = np.concatenate((source01, source02))
@@ -113,7 +113,7 @@ class ClusterMatchSimilarityMatrixTest(unittest.TestCase):
             [0.8, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0],  #03 2 --
             [1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],  #04 2 --
             [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0],  #05 3
-        ], dtype=np.float)
+        ], dtype=float)
         # source01 = source01 + np.random.rand(6, 7) * 0.2
 
         # source02
@@ -127,7 +127,7 @@ class ClusterMatchSimilarityMatrixTest(unittest.TestCase):
             [  0,   0, 500, 1000, 500,  np.nan,    0.0],  #12 1 <<
             [100, 100,   0,    0,   0,       0,    0.0],  #13 2 --
             [  0,   0,   0,    0,   0,  np.nan,  100.0],  #14 3
-        ], dtype=np.float)
+        ], dtype=float)
         # source02 = source02 + np.random.rand(9, 7) * 20
 
         data = np.concatenate((source01, source02))
@@ -184,7 +184,7 @@ class ClusterMatchSimilarityMatrixTest(unittest.TestCase):
             [0.8, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0],  #03 2 --
             [1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],  #04 2 --
             [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0],  #05 3
-        ], dtype=np.float)
+        ], dtype=float)
         # source01 = source01 + np.random.rand(6, 7) * 0.2
 
         # source02
@@ -198,7 +198,7 @@ class ClusterMatchSimilarityMatrixTest(unittest.TestCase):
             [  0,   0, 500, 1000, 500,  np.nan,    0.0],  #12 1 <<
             [100, 100,   0,    0,   0,  np.nan,    0.0],  #13 2 --
             [  0,   0,   0,    0,   0,  np.nan,  100.0],  #14 3
-        ], dtype=np.float)
+        ], dtype=float)
         # source02 = source02 + np.random.rand(9, 7) * 20
 
         data = np.concatenate((source01, source02))
@@ -255,7 +255,7 @@ class ClusterMatchSimilarityMatrixTest(unittest.TestCase):
             [0.8, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0],  #03 2 --
             [1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],  #04 2 --
             [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0],  #05 3
-        ], dtype=np.float)
+        ], dtype=float)
         # source01 = source01 + np.random.rand(6, 7) * 0.2
 
         # source02
@@ -269,7 +269,7 @@ class ClusterMatchSimilarityMatrixTest(unittest.TestCase):
             [  0,        0,      500, 1000, 500,  np.nan,    0.0],  #12 1 <<
             [100,      100,        0,    0,   0,       0,    0.0],  #13 2 --
             [  0,        0,        0,    0,   0,       0,  100.0],  #14 3
-        ], dtype=np.float)
+        ], dtype=float)
         # source02 = source02 + np.random.rand(9, 7) * 20
 
         data = np.concatenate((source01, source02))
@@ -326,7 +326,7 @@ class ClusterMatchSimilarityMatrixTest(unittest.TestCase):
             [0.8, 0.8, np.nan, 0.0, 0.0,    0.0, 0.0],  #03 2 --
             [1.0, 1.0,    0.0, 0.0, 0.0,    0.0, 0.0],  #04 2 --
             [0.0, 0.0,    0.0, 0.0, 0.0,    0.0, 1.0],  #05 3
-        ], dtype=np.float)
+        ], dtype=float)
         # source01 = source01 + np.random.rand(6, 7) * 0.2
 
         # source02
@@ -340,7 +340,7 @@ class ClusterMatchSimilarityMatrixTest(unittest.TestCase):
             [  0,        0,      500, 1000, 500,  np.nan,    0.0],  #12 1 <<
             [100,      100,        0,    0,   0,       0,    0.0],  #13 2 --
             [  0,        0,        0,    0,   0,       0,  100.0],  #14 3
-        ], dtype=np.float)
+        ], dtype=float)
         # source02 = source02 + np.random.rand(9, 7) * 20
 
         data = np.concatenate((source01, source02))
@@ -500,7 +500,7 @@ class ClusterMatchSimilarityMatrixTest(unittest.TestCase):
             [0.8, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0],  #03 2 --
             [1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],  #04 2 --
             [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0],  #05 3
-        ], dtype=np.float)
+        ], dtype=float)
         # source01 = source01 + np.random.rand(6, 7) * 0.2
 
         # source02
@@ -514,7 +514,7 @@ class ClusterMatchSimilarityMatrixTest(unittest.TestCase):
             [  0,   0, 500, 1000, 500,  0,    0.0],  #12 1 <<
             [100, 100,   0,    0,   0,  0,    0.0],  #13 2 --
             [  0,   0,   0,    0,   0,  0,  100.0],  #14 3
-        ], dtype=np.float)
+        ], dtype=float)
         # source02 = source02 + np.random.rand(9, 7) * 20
 
         # source03
@@ -528,7 +528,7 @@ class ClusterMatchSimilarityMatrixTest(unittest.TestCase):
             [  0,   0, 500, 1000, 500,  0,    0.0],  #21 1 <<
             [100, 100,   0,    0,   0,  0,    0.0],  #22 2 --
             [  0,   0,   0,    0,   0,  0,  100.0],  #23 3
-        ], dtype=np.float)
+        ], dtype=float)
 
         # source04
         source04 = np.array([
@@ -541,7 +541,7 @@ class ClusterMatchSimilarityMatrixTest(unittest.TestCase):
             [  0,   0, 500, 1000, 500,  0,    0.0],  #30 1 <<
             [100, 100,   0,    0,   0,  0,    0.0],  #31 2 --
             [  0,   0,   0,    0,   0,  0,  100.0],  #32 3
-        ], dtype=np.float)
+        ], dtype=float)
 
         data = np.concatenate((source01, source02, source03, source04))
 
